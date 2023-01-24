@@ -1,17 +1,27 @@
 <!DOCTYPE html><html>
     <head>
-        <title>Minesweeper</title>
+        <title>BOMB CRACKER</title>
         <link rel="stylesheet" href="style.css" />
-        
-       
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />       
     <body>
-        <select id="level">
-            <option>Beginner</option>
-            <option>Intermediate</option>
-            <option>Expert</option>
-        </select>
-        <div id="mine"></div>
-        <div id="answer"></div>
+        <div id="title">〘BOMB CRACKER〙</div>
+        <div id="map">
+            <div>
+            <select id="level">
+                <option>Start</option>
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Expert</option>
+            </select>
+            <div id="answer"></div>
+            </div>
+            <div >
+                <input type="button" value="Crack it">
+                <div id="mine"></div>
+            </div>
+        </div>
+        
+        
         <script src="./active.js" charset="UTF-8"></script>   
     </body>
 </html>

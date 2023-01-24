@@ -1,9 +1,72 @@
 
+#title{
+    margin: 50px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center; 
+    background-image: linear-gradient(to right, #9d0000, #9d0000, #00009d, #00009d);
+    white-space: nowrap;
+    position:relative;
+    -webkit-background-clip: text;
+    text-align:unset;
+    background:(to right, #9d0000, #00009d);
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    left:20px;
+}
+#level{
+    margin: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-width: 1px;
+    border-radius: 2px;
+}
+body{
+    letter-spacing:10px;
+    font-size: 16px;
+    text-align:center;
+}
 #mine{
     letter-spacing:10px;
-    margin: 10px;
+    width: fit-content;
+    padding-left:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border: 10px;
+    border-style: groove;
+    margin: 20px;
+    white-space: nowrap;padding-right:10px;
 }
 #answer{
     letter-spacing:10px;
-    margin: 10px;
+    width: fit-content;
+    padding-left:10px;padding-right:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border: 10px;
+    border-style: groove;
+    margin: 20px;
+    white-space: nowrap;
 }
+#map{
+    display: flex;
+  justify-content: center;  
+  margin: auto;
+}
+input{
+    background-color: transparent;
+    border-width: 1px;
+    border-radius: 2px;
+    margin: 20px;
+    height: 20px;
+}
+input:hover{
+    color:#00009d;
+    background-color:#fff;
+    border:2px #00009d solid;
+  }
+ #level:hover{
+    color:#9d0000;
+    background-color:#fff;
+    border:2px #9d0000 solid;
+  }
