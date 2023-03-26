@@ -1,10 +1,37 @@
+html{
+    height:100%;
+    background-color: #b6b6b6;
+}
+#content{
+    width: 600px;
+    letter-spacing: 0px;
+    justify-content: center;  
+    margin: auto;
+    text-align: left;
+}
+#info{
+    background: linear-gradient(45deg, #ffcc00 25%, transparent 0, transparent 50%, #ffcc00 0, #ffcc00 75%,transparent 0); background-size:30px 30px;
 
+    display: flex;
+    justify-content: center;  
+    margin-top: 60px;
+}
+#infotop{
+    background: linear-gradient(45deg, #ffcc00 25%, transparent 0, transparent 50%, #ffcc00 0, #ffcc00 75%,transparent 0); background-size:30px 30px;
+    position: fixed;
+    top:0px;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    width:100%;
+    transform: translate(-50%,0);
+}
 #title{
     margin: 50px;
     font-size: 30px;
     display: flex;
     justify-content: center; 
-    background-image: linear-gradient(to right, #9d0000, #9d0000, #00009d, #00009d);
+    background-image: linear-gradient(to right, #9d0000, #826a09, #00009d, #00009d);
     white-space: nowrap;
     position:relative;
     -webkit-background-clip: text;
@@ -13,6 +40,7 @@
     -webkit-text-fill-color: transparent;
     position: relative;
     left:20px;
+    top:30px;
 }
 #level{
     margin: 20px;
@@ -25,6 +53,7 @@ body{
     letter-spacing:10px;
     font-size: 16px;
     text-align:center;
+    height: 100%; margin: 0;
 }
 #mine{
     letter-spacing:10px;
@@ -32,21 +61,25 @@ body{
     padding-left:10px;
     padding-top:5px;
     padding-bottom:5px;
-    border: 10px;
-    border-style: groove;
+    border: 5px;
+    border-style: outset;
+    border-color: #ffcc00;
     margin: 20px;
     white-space: nowrap;padding-right:10px;
+    background-color: rgba(210, 210, 210, 0.375);
 }
 #answer{
     letter-spacing:10px;
     width: fit-content;
-    padding-left:10px;padding-right:10px;
+    padding-left:10px;
     padding-top:5px;
     padding-bottom:5px;
-    border: 10px;
-    border-style: groove;
+    border: 5px;
+    border-style: outset;
+    border-color: #ffcc00;
     margin: 20px;
-    white-space: nowrap;
+    white-space: nowrap;padding-right:10px;
+    background-color: rgba(210, 210, 210, 0.375);
 }
 #map{
     display: flex;
@@ -68,5 +101,36 @@ input:hover{
  #level:hover{
     color:#9d0000;
     background-color:#fff;
-    border:2px #9d0000 solid;
+    border:2px #ffcd58 solid;
   }
+#bomb{
+    position: fixed;
+    top:75%;
+    left: -5%;
+    animation-name: bombDrop;
+    animation-duration: 2s;
+    animation-iteration-count:initial;
+  }
+#flag{
+    position: fixed;
+    top:75%;
+    right: -5%;
+    animation-name: FlagDrop;
+    animation-duration: 2s;
+    animation-iteration-count:initial;
+    transform: rotate(-20deg);
+  }
+
+
+@keyframes bombDrop {
+    0% { top:-30%; transform:rotate(90deg);}
+    25%{ top:75%;transform:rotate(220deg); }
+    60% { top:30%;transform:rotate(300deg); }
+    100% { top:75%;transform:rotate(359deg); }
+}
+@keyframes FlagDrop {
+    0% { top:-30%; transform:rotate(90deg);}
+    25%{ top:75%;transform:rotate(200deg); }
+    60% { top:30%;transform:rotate(300deg); }
+    100% { top:75%;transform:rotate(340deg); }
+}

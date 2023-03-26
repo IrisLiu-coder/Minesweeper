@@ -1,9 +1,37 @@
 <!DOCTYPE html><html>
+    
     <head>
         <title>BOMB CRACKER</title>
         <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />       
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />      
+    </head>
     <body>
+        <div id="infotop">
+            <a href="#title" style="margin: 10px;"><img src="./source/title.png"></a>
+            <a href="#map" style="margin: 10px;"><img src="./source/play.png"></a>
+            <a href="#introduction" style="margin: 10px;"><img src="./source/introduction.png"></a>
+            <a href="#history" style="margin: 10px;"><img src="./source/history.png"></a>
+            <a href="#info" style="margin: 10px;"><img src="./source/link.png"></a>
+        </div> 
+        <div id="scroller" style="position: fixed;z-index: -1;width: 100%;height: 100%;"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+        <script>
+            VANTA.GLOBE({
+                el: "#scroller",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0xffffff,
+                color2: 0xffbd00,
+                backgroundColor: 0xb6b6b6,
+                size:0.5
+            })
+        </script>
         <div id="title">〘BOMB CRACKER〙</div>
         <div id="map">
             <div>
@@ -20,8 +48,27 @@
                 <div id="mine"></div>
             </div>
         </div>
-        
-        
+        <div id="content">
+            <h3 id="introduction">Introduction</h3>
+            Minesweeper is a logic puzzle video game genre generally played on personal computers. The game features a grid of clickable squares, with hidden "mines" scattered throughout the board. The objective is to clear the board without detonating any mines, with help from clues about the number of neighboring mines in each field. Variants of Minesweeper have been made that expand on the basic concepts, such as Minesweeper X, Crossmines, and Minehunt. Minesweeper has been incorporated as a minigame in other games, such as RuneScape and Minecraft's 2015 April Fools update.
+            <br><br>
+            The origin of Minesweeper is unclear. According to TechRadar, the first version of the game was 1990's Microsoft Minesweeper, but Eurogamer says Mined-Out by Ian Andrew (1983) was the first Minesweeper game. Curt Johnson, the creator of Microsoft Minesweeper, acknowledges that his game's design was borrowed from another game, but it was not Mined-Out, and he does not remember which game it is.
+            <br><br>
+            <h3 id="history">History</h3>
+            According to TechRadar, Minesweeper was created by Microsoft in the 1990s,but Eurogamer commented that Minesweeper gained a lot of inspiration from a "lesser known, tightly designed game", Mined-Out by Ian Andrew for the ZX Spectrum in 1983.According to Andrew, Microsoft copied Mined-Out for Microsoft Minesweeper.The Microsoft version made its first appearance in 1990, in Windows Entertainment Pack, which was given as part of Windows 3.11. The game was written by Robert Donner and Curt Johnson. Johnson stated that Microsoft Minesweeper's design was borrowed from another game, but it was not Mined-Out, and he does not remember which game it was. In 2001, a group called the International Campaign to Ban Winmine campaigned for the game's topic to be changed from landmines. The group commented that the game "is an offence against the victims of the mines". A later version, found present in Windows Vista's Minesweeper offered a tileset with flowers replacing mines as a response.
+            <br><br>
+            The game is frequently bundled with operating systems and GUIs, including Minesweeper for IBM's OS/2, Microsoft Windows, KDE, GNOME and Palm OS. Microsoft Minesweeper was included by default in Windows until Windows 8 (2012). Microsoft replaced this with a free-to-play version of the game, downloadable from the Microsoft Store, which is "riddled with ads", according to How-To Geek.
+        </div>
+
+        <img src="./source/bomb.png" id="bomb">
+        <img src="./source/flag.png" id="flag">
+
+        <div id="info">
+            <a href="https://sites.google.com/view/liu-iris/%E9%A6%96%E9%A0%81" style="margin: 10px;"><img src="./source/home.png"></a>
+            <a href="https://www.instagram.com/benny._.liu/" style="margin: 10px;"><img src="./source/instagram.png"></a>
+            <a href="mailto:bennywow0413@gmail.com" style="margin: 10px;"><img src="./source/mail.png"></a>
+            <a href="https://github.com/IrisLiu-coder" style="margin: 10px;"><img src="./source/github.png"></a>
+        </div> 
         <script src="./active.js" charset="UTF-8"></script>   
     </body>
 </html>

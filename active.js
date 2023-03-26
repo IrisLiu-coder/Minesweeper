@@ -1,6 +1,6 @@
 var row,column,level=document.getElementById("level");
 var map=[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],dir=[[1,0],[-1,0],[0,1],[0,-1],[-1,-1],[1,-1],[-1,1],[1,1]];
-var number_style=["&ensp;","<font color='#0000C6'>1</font>","<font color='#00A600'>2</font>","<font color='#BF0060'>3</font>","<font color='#930093'>4</font>","<font color='#C6A300'>5</font>","<font color='#EA7500'>6</font>","<font color='#4F4F4F'>7</font>","<font color='#8E8E8E'>8</font>","<font color='#EA0000'>x</font>"];
+var number_style=["<font color='#d2d2d2'>0</font>","<font color='#0000C6'>1</font>","<font color='#00A600'>2</font>","<font color='#BF0060'>3</font>","<font color='#930093'>4</font>","<font color='#C6A300'>5</font>","<font color='#EA7500'>6</font>","<font color='#4F4F4F'>7</font>","<font color='#8E8E8E'>8</font>","<font color='#EA0000'>x</font>"];
 var print_map="";
 level.addEventListener("change",set_mine)
 for(var i=0;i<16;i++){
